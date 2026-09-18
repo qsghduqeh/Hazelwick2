@@ -1,3 +1,5 @@
-YEARNOW= 2026
-name = ("enter your name")
-year = input("Enter the year you were born")
+name = str(input("what is your name? "))
+height = input("Enter your height in cm ")
+print ("hi")name
+meters= height//100
+print("Your height is"), meters("inc")
