@@ -1,26 +1,27 @@
-mark= int(input("Enter a mark (or -1 to finish): "))
+mark = int(input("Enter a mark (or -1 to finish): "))
+
 count=0
 highest=0
-lowest=0
+lowest= 100
 total=0
 
 while mark != -1:
     
-    if mark>100 and mark<0 :
+    if mark > 100 or mark < 0 :
         print("INVALID")
-
-    if highest<mark:
+    else:
+        count= count+1
+        total= total+mark
+        
+        if highest<mark:
             highest=mark
 
-            if lowest>mark:
-                 lowest=mark
+    if lowest>mark:
+            lowest=mark
 
-    count= count+1
-    total= total+mark
-    int(input("Enter a mark (or -1 to finish): "))
+    mark = int(input("Enter a mark (or -1 to finish): "))
 
-if mark== -1 
- print("marks entered: ", count)
-print("Average:",total//count)
-print("Highest:", highest)
-print("lowest:", lowest)
+if mark == -1:
+     print("Average:",total//count)
+     print("Highest:", highest)
+     print("Lowest:", lowest)
