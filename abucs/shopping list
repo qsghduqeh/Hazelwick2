@@ -1,0 +1,29 @@
+shopping = []
+
+number = int(input("Choose an option: "))
+
+while number != 5: 
+
+    if number == 1:
+     item = input(" Item to add: ")
+     shopping.append(item)
+     print(item + " added to the list")
+     
+
+    
+    elif number == 2:
+     item = input(" Item to remove: ")
+     shopping.remove(item)
+     print(item + " is removed from the list")
+
+     
+    elif number == 3:
+        print(shopping)
+
+    elif number == 4:
+       print("Number of items :", len(shopping))
+
+    number = int(input("Choose an option: ")) 
+
+
+print("goodbye")
